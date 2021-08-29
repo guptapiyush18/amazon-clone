@@ -1,0 +1,103 @@
+[debug] [2021-08-29T16:25:49.751Z] ----------------------------------------------------------------------
+[debug] [2021-08-29T16:25:49.753Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-08-29T16:25:49.753Z] CLI Version:   9.16.6
+[debug] [2021-08-29T16:25:49.753Z] Platform:      darwin
+[debug] [2021-08-29T16:25:49.753Z] Node Version:  v14.17.4
+[debug] [2021-08-29T16:25:49.754Z] Time:          Sun Aug 29 2021 21:55:49 GMT+0530 (India Standard Time)
+[debug] [2021-08-29T16:25:49.754Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-29T16:25:49.795Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-29T16:25:49.795Z] > authorizing via signed-in user (piyushkapss@gmail.com)
+[debug] [2021-08-29T16:25:49.796Z] [iam] checking project challenge-1dff7 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-29T16:25:49.797Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-29T16:25:49.797Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-29T16:25:50.225Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 29 Aug 2021 16:25:50 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-29T16:25:50.275Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-1dff7:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-29T16:25:51.977Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 29 Aug 2021 16:25:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1395","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-29T16:25:51.979Z] > refreshing access token with scopes: []
+[debug] [2021-08-29T16:25:51.979Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-29T16:25:52.277Z] <<< HTTP RESPONSE 200 {"date":"Sun, 29 Aug 2021 16:25:52 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-29T16:25:52.324Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-1dff7 [none]
+[debug] [2021-08-29T16:25:53.033Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-1dff7 200
+[debug] [2021-08-29T16:25:53.033Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-1dff7 {"projectId":"challenge-1dff7","projectNumber":"471786548590","displayName":"amazon-challenge","name":"projects/challenge-1dff7","resources":{"hostingSite":"challenge-1dff7"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'challenge-1dff7'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-08-29T16:25:53.036Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-29T16:25:53.036Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-29T16:25:53.340Z] <<< HTTP RESPONSE 200 {"date":"Sun, 29 Aug 2021 16:25:53 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-29T16:25:53.387Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/challenge-1dff7/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-08-29T16:25:55.925Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 29 Aug 2021 16:25:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[challenge-1dff7]: beginning deploy... 
+[info] i  hosting[challenge-1dff7]: found 18 files in build 
+[debug] [2021-08-29T16:25:56.126Z] > refreshing access token with scopes: []
+[debug] [2021-08-29T16:25:56.126Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-29T16:25:56.127Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2021-08-29T16:25:56.127Z] [hosting][hash queue][FINAL] {"max":186,"min":7,"avg":19,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":191}
+[debug] [2021-08-29T16:25:56.366Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 29 Aug 2021 16:25:56 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-29T16:25:56.411Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/challenge-1dff7/versions/6df40c99084bb5ac:populateFiles [none]
+[debug] [2021-08-29T16:25:56.411Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/challenge-1dff7/versions/6df40c99084bb5ac:populateFiles {"files":{"/asset-manifest.json":"03725f46b828e75e27a625eb58269617f9f9f1d482c548e8b0505d092b7229eb","/favicon.ico":"b72f7455f00e4e58792d2bca892abb068e2213838c0316d6b7a0d6d16acd1955","/index.html":"1f609be83feaa13618972f9c050bae5035ec4b932e201b83488096ef6a7cff5a","/logo192.png":"caff018b7f1e8fd481eb1c50d75b0ef236bcd5078b1d15c8bb348453fee30293","/manifest.json":"341d52628782f8ac9290bbfc43298afccb47b7cbfcee146ae30cf0f46bc30900","/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/static/css/main.5ae3d6a6.chunk.css":"15892a20bf3fed491393ac21419b37e4d01521aeb2e756d86fef56081bb31358","/logo512.png":"191fc21360b4ccfb1cda11a1efb97f489ed22672ca83f4064316802bbfdd750e","/static/js/2.21a0898a.chunk.js.LICENSE.txt":"7f8ecfd18a36dd53d6f9e8b322e16dfb26ea1aee915ee50927a18f2eef535295","/static/css/main.5ae3d6a6.chunk.css.map":"6c0eeef96ee14b7e98268e064b388f0950d0f0670cba0011e0caaaf4270c5783","/static/js/3.2905215c.chunk.js":"893f1dabaa792d4a042a876a47d74e3a6fdc0a841475eb0a66a70a34d783ecea","/static/js/main.a2f724af.chunk.js":"b46ce6639844747bcad58d8b68f9326cdae0561085ab3da94a5b06bb44390125","/static/js/3.2905215c.chunk.js.map":"7c795c4a614f4bd47016e708579aa8b32d375472aea1c4b6a0050c5eb54d4c18","/static/js/runtime-main.4abccf98.js":"fb9306ec99f09fb714bd324600299c228fbe79c24d264389d91eabaaf36b367c","/static/js/runtime-main.4abccf98.js.map":"c2b65e880db0335588181c6e77a3d1777c6663a0f012ba37693984bf0f4460f5","/static/js/main.a2f724af.chunk.js.map":"77b2490c3ddc2bf79f9e2d9995f8b5364ee11ac6ea79c343df022cf365d73c6d","/static/js/2.21a0898a.chunk.js":"00884c4057a997ca37527aaaee873efed1c490a910dfe943f91f9a88712b4146","/static/js/2.21a0898a.chunk.js.map":"eeaaaa171874448f5cbda11e5635c6d0a45f02f99a2eeb67d0c26fec80813f32"}}
+[debug] [2021-08-29T16:25:58.417Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/challenge-1dff7/versions/6df40c99084bb5ac:populateFiles 200
+[debug] [2021-08-29T16:25:58.417Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/challenge-1dff7/versions/6df40c99084bb5ac:populateFiles {"uploadRequiredHashes":["03725f46b828e75e27a625eb58269617f9f9f1d482c548e8b0505d092b7229eb","b46ce6639844747bcad58d8b68f9326cdae0561085ab3da94a5b06bb44390125","77b2490c3ddc2bf79f9e2d9995f8b5364ee11ac6ea79c343df022cf365d73c6d","1f609be83feaa13618972f9c050bae5035ec4b932e201b83488096ef6a7cff5a"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files"}
+[debug] [2021-08-29T16:25:58.419Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/03725f46b828e75e27a625eb58269617f9f9f1d482c548e8b0505d092b7229eb [none]
+[debug] [2021-08-29T16:25:58.419Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/03725f46b828e75e27a625eb58269617f9f9f1d482c548e8b0505d092b7229eb [stream]
+[debug] [2021-08-29T16:25:58.420Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/b46ce6639844747bcad58d8b68f9326cdae0561085ab3da94a5b06bb44390125 [none]
+[debug] [2021-08-29T16:25:58.420Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/b46ce6639844747bcad58d8b68f9326cdae0561085ab3da94a5b06bb44390125 [stream]
+[debug] [2021-08-29T16:25:58.421Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/77b2490c3ddc2bf79f9e2d9995f8b5364ee11ac6ea79c343df022cf365d73c6d [none]
+[debug] [2021-08-29T16:25:58.421Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/77b2490c3ddc2bf79f9e2d9995f8b5364ee11ac6ea79c343df022cf365d73c6d [stream]
+[debug] [2021-08-29T16:25:58.422Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/1f609be83feaa13618972f9c050bae5035ec4b932e201b83488096ef6a7cff5a [none]
+[debug] [2021-08-29T16:25:58.422Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/1f609be83feaa13618972f9c050bae5035ec4b932e201b83488096ef6a7cff5a [stream]
+[debug] [2021-08-29T16:25:58.423Z] [hosting][populate queue][FINAL] {"max":2293,"min":2293,"avg":2293,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2298}
+[debug] [2021-08-29T16:25:58.423Z] [hosting] uploads queued: 4
+[debug] [2021-08-29T16:26:00.404Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/b46ce6639844747bcad58d8b68f9326cdae0561085ab3da94a5b06bb44390125 200
+[debug] [2021-08-29T16:26:00.404Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/b46ce6639844747bcad58d8b68f9326cdae0561085ab3da94a5b06bb44390125 [stream]
+[debug] [2021-08-29T16:26:01.492Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/03725f46b828e75e27a625eb58269617f9f9f1d482c548e8b0505d092b7229eb 200
+[debug] [2021-08-29T16:26:01.492Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/03725f46b828e75e27a625eb58269617f9f9f1d482c548e8b0505d092b7229eb [stream]
+[debug] [2021-08-29T16:26:01.512Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/1f609be83feaa13618972f9c050bae5035ec4b932e201b83488096ef6a7cff5a 200
+[debug] [2021-08-29T16:26:01.512Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/1f609be83feaa13618972f9c050bae5035ec4b932e201b83488096ef6a7cff5a [stream]
+[debug] [2021-08-29T16:26:01.552Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/77b2490c3ddc2bf79f9e2d9995f8b5364ee11ac6ea79c343df022cf365d73c6d 200
+[debug] [2021-08-29T16:26:01.552Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/challenge-1dff7/versions/6df40c99084bb5ac/files/77b2490c3ddc2bf79f9e2d9995f8b5364ee11ac6ea79c343df022cf365d73c6d [stream]
+[debug] [2021-08-29T16:26:01.552Z] [hosting][upload queue][FINAL] {"max":3134,"min":1986,"avg":2822,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":3135}
+[info] ✔  hosting[challenge-1dff7]: file upload complete 
+[debug] [2021-08-29T16:26:01.553Z] [hosting] deploy completed after 5627ms
+[debug] [2021-08-29T16:26:01.556Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "challenge-1dff7"
+    },
+    "site": "challenge-1dff7",
+    "version": "sites/challenge-1dff7/versions/6df40c99084bb5ac"
+  }
+]
+[info] i  hosting[challenge-1dff7]: finalizing version... 
+[debug] [2021-08-29T16:26:01.557Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-29T16:26:01.557Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-29T16:26:01.834Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 29 Aug 2021 16:26:01 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-29T16:26:01.897Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/challenge-1dff7/versions/6df40c99084bb5ac?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-08-29T16:26:03.710Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 29 Aug 2021 16:26:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-29T16:26:03.711Z] [hosting] finalized version for challenge-1dff7: {"name":"sites/challenge-1dff7/versions/6df40c99084bb5ac","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-08-29T16:25:55.428256Z","createUser":{"email":"piyushkapss@gmail.com"},"finalizeTime":"2021-08-29T16:26:03.727440Z","finalizeUser":{"email":"piyushkapss@gmail.com"}}
+[info] ✔  hosting[challenge-1dff7]: version finalized 
+[info] i  hosting[challenge-1dff7]: releasing new version... 
+[debug] [2021-08-29T16:26:03.712Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/challenge-1dff7/releases?version_name=sites/challenge-1dff7/versions/6df40c99084bb5ac  
+ {"message":null}
